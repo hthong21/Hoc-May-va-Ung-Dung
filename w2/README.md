@@ -22,7 +22,8 @@
 
 
 ### 4. So sánh tỉ lệ chính xác và hiệu suất giữa 2 thuật toán
-<img width="664" alt="Screenshot 2024-09-27 at 10 00 12 PM" src="https://github.com/user-attachments/assets/4fb92c18-02ab-455a-906b-2f051b7a5381">
+![image](https://github.com/user-attachments/assets/821dded5-e992-4ad6-9c44-b79517e94474)
+
 
 
 ## Lab 2.2:
