@@ -35,4 +35,5 @@
     - Chuyển đổi các cột dữ liệu thành nhị phân. Và dự đoán dữ liệu mới dựa vào các đặc trưng dữ liệu mà mô hình đã được học.
 
 ### 3. Hiển thị kết quả:
-<img width="1009" alt="Screenshot 2024-09-27 at 10 23 54 PM" src="https://github.com/user-attachments/assets/4de795fc-f73a-4634-a989-78453128caf5">
+![image](https://github.com/user-attachments/assets/6afe96ad-1835-482d-9cb1-f595b7e48b3d)
+
