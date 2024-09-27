@@ -9,6 +9,19 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .upload-container {
+            display: inline-block;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .image-container {
@@ -16,20 +29,74 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 15px;
         }
 
-        .image-container img {
-            max-width: 48%;
-            margin: 10px;
-            height: auto;
+        .image-box {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-box img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(255, 0, 0, 0.7);
+            border: none;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .message {
+            margin-top: 10px;
+            color: red;
+        }
+
+        .save-btn, .view-saved-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .view-saved-btn {
+            background-color: #007bff;
+        }
+
+        .save-btn:hover {
+            background-color: #218838;
+        }
+
+        .view-saved-btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
     <h1>Nộp Bài</h1>
-    <input type="file" id="imageInput" accept="image/*" multiple>
+    <div class="upload-container">
+        <input type="file" id="imageInput" accept="image/*" multiple>
+        <p class="message" id="message"></p>
+    </div>
+    
     <div class="image-container" id="imageContainer"></div>
+    
+    <button class="save-btn" id="saveBtn">Lưu Bài</button>
+    <button class="view-saved-btn" id="viewSavedBtn">Xem lại các bài đã lưu</button>
+    <p class="message" id="saveMessage"></p>
 
     <script src="script.js"></script>
 
